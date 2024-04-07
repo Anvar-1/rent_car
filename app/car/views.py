@@ -6,3 +6,4 @@ from .serializers import CarSerializer
 class CarViewSet(viewsets.ModelViewSet):
     queryset = Car.objects.select_related('brand').all()
     serializer_class = CarSerializer
+
